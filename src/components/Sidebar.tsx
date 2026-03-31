@@ -95,7 +95,7 @@ export function Sidebar({
         <div className="flex items-center space-x-2">
           <Calendar className="h-6 w-6 text-primary" />
           <div>
-            <h2 className="font-semibold">MeetTracker</h2>
+            <h2 className="font-semibold">Meeting Test Tracker</h2>
             <p className="text-xs text-muted-foreground">v2.0</p>
           </div>
         </div>

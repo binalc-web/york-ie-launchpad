@@ -98,7 +98,7 @@ export function TopNavigation({
               <Calendar className="h-6 w-6 text-primary" />
             </div>
             <div>
-              <h2 className="font-semibold text-foreground">MeetTracker</h2>
+              <h2 className="font-semibold text-foreground">Meeting Test Tracker</h2>
               <p className="text-xs text-muted-foreground">v2.0</p>
             </div>
           </div>
