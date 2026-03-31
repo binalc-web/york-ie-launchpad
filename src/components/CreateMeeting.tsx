@@ -1045,22 +1045,8 @@ Background Context:
 
       {/* Main Create Meeting Area */}
       <div className="lg:col-span-3 space-y-6">
-        <div className="flex items-center justify-between">
-          <div>
-            <h2 className="text-2xl font-semibold">Schedule Meeting</h2>
-            <p className="text-muted-foreground">
-              {followUpData 
-                ? 'Review and schedule your follow-up meeting'
-                : integrations?.googleCalendar?.connected 
-                  ? 'Smart scheduling with Google Calendar integration'
-                  : 'Click on a date and time to create a meeting with AI assistance'
-              }
-              {getConnectedIntegrationsCount() > 0 && (
-                <span className="text-primary"> • {getConnectedIntegrationsCount()} integrations active</span>
-              )}
-            </p>
-          </div>
-          <div className="flex items-center space-x-2">
+        {(viewMode !== 'month' || isInMeeting) && (
+          <div className="flex flex-wrap items-center justify-end gap-2">
             {viewMode !== 'month' && (
               <Button variant="outline" onClick={() => setViewMode('month')}>
                 Back to Calendar
@@ -1076,7 +1062,7 @@ Background Context:
               </Button>
             )}
           </div>
-        </div>
+        )}
 
         <div className="space-y-6">
 
