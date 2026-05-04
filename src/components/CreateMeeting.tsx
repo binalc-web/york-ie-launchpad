@@ -939,7 +939,7 @@ Background Context:
                     {meeting.zoomLink && (
                       <Button 
                         size="sm" 
-                        className="bg-green-600 hover:bg-green-700 text-white"
+                        className="h-10 min-w-[5rem] px-4 bg-red-600 hover:bg-red-700 text-white"
                         onClick={() => window.open(meeting.zoomLink, '_blank')}
                       >
                         Join
