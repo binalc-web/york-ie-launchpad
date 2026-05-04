@@ -1094,18 +1094,20 @@ Background Context:
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="flex space-x-4">
+                <div className="inline-flex flex-wrap gap-2">
                   <Button
                     variant={meetingType === 'single' ? 'default' : 'outline'}
                     onClick={() => setMeetingType('single')}
-                    className="flex-1"
+                    size="sm"
+                    className="h-8 rounded-full border px-4 text-xs font-medium"
                   >
                     Single Meeting
                   </Button>
                   <Button
                     variant={meetingType === 'series' ? 'default' : 'outline'}
-                    onClick={() => setMeetingType('series')}  
-                    className="flex-1"
+                    onClick={() => setMeetingType('series')}
+                    size="sm"
+                    className="h-8 rounded-full border px-4 text-xs font-medium"
                   >
                     Meeting Series
                   </Button>
