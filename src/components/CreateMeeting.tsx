@@ -939,7 +939,7 @@ Background Context:
                     {meeting.zoomLink && (
                       <Button 
                         size="sm" 
-                        className="bg-green-600 hover:bg-green-700 text-white"
+                        className="h-10 min-w-[5rem] px-4 bg-red-600 hover:bg-red-700 text-white"
                         onClick={() => window.open(meeting.zoomLink, '_blank')}
                       >
                         Join
@@ -1094,18 +1094,20 @@ Background Context:
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="flex space-x-4">
+                <div className="inline-flex flex-wrap gap-2">
                   <Button
                     variant={meetingType === 'single' ? 'default' : 'outline'}
                     onClick={() => setMeetingType('single')}
-                    className="flex-1"
+                    size="sm"
+                    className="h-8 rounded-full border px-4 text-xs font-medium"
                   >
                     Single Meeting
                   </Button>
                   <Button
                     variant={meetingType === 'series' ? 'default' : 'outline'}
-                    onClick={() => setMeetingType('series')}  
-                    className="flex-1"
+                    onClick={() => setMeetingType('series')}
+                    size="sm"
+                    className="h-8 rounded-full border px-4 text-xs font-medium"
                   >
                     Meeting Series
                   </Button>
